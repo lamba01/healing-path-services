@@ -62,9 +62,9 @@ export default function Navbar() {
           className="md:hidden p-2 flex flex-col gap-1.5"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu">
-          <span className={`block w-6 h-0.5 bg-ink transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
-          <span className={`block w-6 h-0.5 bg-ink transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
-          <span className={`block w-6 h-0.5 bg-ink transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+          <span className={`block w-6 h-0.5 bg-white transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
+          <span className={`block w-6 h-0.5 bg-white transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
+          <span className={`block w-6 h-0.5 bg-white transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
         </button>
       </div>
 
@@ -79,8 +79,7 @@ export default function Navbar() {
             </Link>
           ))}
           <div className="flex gap-3 pt-3 border-t border-stone-100">
-            <Link href="/login" className="flex-1 text-center py-2.5 border border-ink text-ink text-sm font-medium hover:bg-ink hover:text-white transition-all">Login</Link>
-            <Link href="/login?tab=register" className="flex-1 text-center py-2.5 bg-gold text-white text-sm font-medium hover:bg-gold-light transition-all">Register</Link>
+            <Link href="/" className="flex-1 text-center py-2.5 bg-olive-500 capitalize border border-ink text-ink text-sm font-medium hover:bg-ink hover:text-white hover:bg-ink text-white transition-all duration-200 hover:bg-olive-600">book appointment</Link>
           </div>
         </div>
       )}

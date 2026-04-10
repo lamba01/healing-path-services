@@ -1,7 +1,7 @@
 
 export default function ServiceBtn() {
   return (
-    <button className="bg-coral-500 hover:bg-olive-600 p-5 rounded-2xl">
+    <button className="bg-coral-500 cursor-pointer hover:scale-105 capitalize py-3 px-5 rounded">
         book appointment
     </button>
   )
