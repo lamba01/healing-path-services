@@ -3,11 +3,11 @@ import Image from "next/image"
 
 export default function Hero() {
   return (
-    <section className="min-h-screen  bg-olive flex items-center sm:mt-10 py-10 mt-0 bg-olive-500">
+    <section className="min-h-screen bg-olive flex items-center sm:mt-10 py-10 mt-0 bg-olive-500">
       <div className="max-w-7xl mx-auto w-full px-6 lg:px-10 grid md:grid-cols-2 gap-10 items-center">
 
         {/* TEXT */}
-        <div className="space-y-6 text-center md:text-left">
+        <div className="space-y-6 text-left md:text-left">
           <h1 className="text-white text-4xl lg:text-5xl font-bold leading-tight">
             Professional Psychotherapy Services in 
             <span className="text-coral-500">{" "} Toronto</span>
@@ -18,7 +18,7 @@ export default function Hero() {
             and Confidential therapy sessions to help you manage stress, anxiety, and life&apos;s challenges.
           </p>
 
-          <div className="pt-2 flex gap-5 justify-center sm:justify-start">
+          <div className="pt-2 flex gap-5 justify-start">
             <ServiceBtn />
             <button className="py-3 px-7 cursor-pointer capitalize border rounded border-ink text-ink text-sm font-medium
               hover:bg-ink text-white transition-all duration-200 hover:bg-olive-600 hover:scale-105">
@@ -43,3 +43,4 @@ export default function Hero() {
     </section>
   )
 }
+

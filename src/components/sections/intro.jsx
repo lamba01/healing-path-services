@@ -36,7 +36,7 @@ export default function Intro() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row-reverse items-center gap-5 lg:gap-20">
 
         {/* TEXT */}
-        <div className="flex-1 space-y-3 text-center md:text-left">
+        <div className="flex-1 space-y-3 text-left md:text-left">
           <p className="text-coral-500 text-sm font-semibold uppercase tracking-widest">
             Welcome To
           </p>
