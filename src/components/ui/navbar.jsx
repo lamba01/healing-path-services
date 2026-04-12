@@ -75,7 +75,7 @@ export default function Navbar() {
           <div className="pt-3 border-t border-stone-100">
             <Link href="/contact"
               onClick={() => setMenuOpen(false)}
-              className="block text-center py-2 bg-olive text-white capitalize text-sm font-medium hover:bg-coral transition-all duration-200">
+              className="block text-center py-2 bg-olive-500 text-white capitalize text-sm font-medium hover:bg-coral transition-all duration-200">
               Book Appointment
             </Link>
           </div>
