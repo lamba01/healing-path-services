@@ -10,13 +10,13 @@ export default function Approach() {
       number: "02",
       title: "Trauma-Informed Care",
       description:
-        "Healing unfolds at your pace. We prioritize safety, choice and nervous system regulation — creating a space where you can explore your experiences without feeling overwhelmed.",
+        "Healing unfolds at your pace. We prioritize safety, choice and nervous system regulation, creating a space where you can explore your experiences without feeling overwhelmed.",
     },
     {
       number: "03",
       title: "Empowerment Focused",
       description:
-        "Our goal is not just to help you cope but to help you grow — building self-awareness, emotional balance and a lasting sense of empowerment in your healing journey.",
+        "Our goal is not just to help you cope but to help you grow, building self-awareness, emotional balance and a lasting sense of empowerment in your healing journey.",
     },
   ]
 
@@ -54,7 +54,6 @@ export default function Approach() {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   )

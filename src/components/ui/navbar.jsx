@@ -46,7 +46,7 @@ export default function Navbar() {
         {/* Desktop CTA */}
         <div className="hidden md:flex">
           <Link href="/contact"
-            className="px-5 py-2 capitalize border rounded border-white text-white text-sm font-medium tracking-widest hover:bg-white hover:text-olive transition-all duration-200">
+            className="px-5 py-2 capitalize border rounded border-white text-white text-sm font-medium tracking-widest hover:bg-olive-600 hover:text-olive transition-all duration-200">
             Book Appointment
           </Link>
         </div>
