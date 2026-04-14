@@ -30,13 +30,13 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="font-serif text-xl font-semibold text-white tracking-tight">
         {/* <Image 
-          src="/images/logo2.jpg"
+          src="/images/edit.png"
           alt="Healing Path Logo"
-          width={100}
-          height={100}
+          width={300}
+          height={50}
           className="inline-block mr-2 rounded-full"
         /> */}
-          Healing Path
+        healing path
         </Link>
 
         {/* Desktop Nav */}
