@@ -30,7 +30,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="font-serif text-xl font-semibold text-white tracking-tight">
         {/* <Image 
-          src="/images/llo.jpg"
+          src="/images/logo2.jpg"
           alt="Healing Path Logo"
           width={100}
           height={100}

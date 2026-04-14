@@ -7,7 +7,7 @@ export default function Founder() {
         <div className="flex flex-col md:flex-row items-center gap-10">
           <div className="flex-1">
             <Image
-              src="/images/founder.jfif"
+              src="/images/founder.JPG"
               alt="Founder"
               width={400}
               height={500}
