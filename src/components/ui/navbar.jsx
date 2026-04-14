@@ -47,7 +47,7 @@ export default function Navbar() {
               <Link
                 href={l.href}
                 className={`text-sm font-medium tracking-wide transition-colors duration-200
-                  ${pathname === l.href ? "text-coral" : "text-white hover:text-coral"}`}
+                  ${pathname === l.href ? "text-coral-500 font-semibold" : "text-white hover:text-coral-500"}`}
               >
                 {l.label}
               </Link>

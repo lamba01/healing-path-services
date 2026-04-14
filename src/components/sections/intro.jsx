@@ -36,24 +36,22 @@ export default function Intro() {
         {/* IMAGE */}
         <div className="flex-1 flex justify-center items-center">
           <div className="relative w-75 h-100 md:w-95 md:h-120">
-            {/* BACK IMAGE */}
             <div className="absolute top-0 right-10 sm:left-0 w-full h-1/2">
               <Image
                 src="/images/hero2.jpg"
                 alt="Therapy session"
                 fill
-                sizes="10"
+                // sizes="10"
                 className="object-cover rounded-lg"
               />
             </div>
 
-            {/* FRONT IMAGE */}
             <div className="absolute bottom-15 left-10 sm:-right-25 w-full sm:w-full h-1/2 ">
               <Image
                 src="/images/hero1.jpg"
                 alt="Therapist"
                 fill
-                sizes="10"
+                // sizes="10"
                 className="object-cover rounded-lg"
               />
             </div>
