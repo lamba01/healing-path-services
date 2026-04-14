@@ -3,21 +3,21 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen bg-olive flex items-center sm:mt-10 py-10 mt-0 bg-olive-500">
+    <section className="min-h-screen bg-olive flex items-center sm:mt-10 py-30 sm:py-10 mt-0 bg-olive-500">
       <div className="max-w-7xl mx-auto w-full px-6 lg:px-10 grid md:grid-cols-2 gap-10 items-center">
         {/* TEXT */}
         <div className="space-y-6 text-left md:text-left">
-          <h1 className="text-white text-4xl lg:text-5xl font-bold leading-tight">
+          <h1 className="text-white text-3xl lg:text-5xl font-bold leading-tight">
             Having the right support can create a
             <span className="text-coral-500"> positive path</span>
           </h1>
           <p className="text-white/80 text-sm font-medium sm:text-lg">
-            Healing Path Psychotherapy offers a warm, culturally competent and
-            collaborative space to help you navigate life&apos;s challenges,
-            gain clarity and move forward.
+            Psychotherapy serves as a tool to navigate these challenges, gain
+            clarity, and move forward. It offers a space to alleviate human
+            suffering, pain, and create an enriching meaningful life.
           </p>
 
-          <div className="pt-2 flex gap-5 justify-start">
+          <div className="pt-2 flex flex-col sm:flex-row gap-5 justify-start">
             <ServiceBtn />
             <button
               className="py-3 px-7 cursor-pointer capitalize border rounded border-ink text-ink text-sm font-medium
