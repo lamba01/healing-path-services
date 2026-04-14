@@ -17,10 +17,10 @@ export default function Founder() {
           <div className="flex-1 text-left">
             <h2 className="text-3xl font-bold text-olive mb-4">Meet Our Founder</h2>
             <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-              [Founder&apos;s Name] is a licensed psychotherapist with over [X] years of experience in providing compassionate and effective mental health support. [He/She] holds a degree in [Degree] from [University] and has completed specialized training in [Specialization].
+              [Founder&apos;s Name] is a licensed psychotherapist with over [X] years of experience in providing compassionate and effective mental health support. She holds a BSc in Sociology, an MA in International Public Relations and an MA in Counselling Psychology — bringing a uniquely holistic and people-centred foundation to her therapeutic practice.
             </p>
-            <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-              Founder&apos;s Name is dedicated to helping individuals navigate life&apos;s challenges and achieve lasting healing. [He/She] believes in the power of connection, understanding, and personalized care to facilitate meaningful change.
+            <p className="text-gray-600 text-base sm:text-lg leading-relaxed py-10">
+              Founder&apos;s Name is dedicated to helping individuals navigate life&apos;s challenges and achieve lasting healing. She believes in the power of connection, understanding, and personalized care to facilitate meaningful change.
             </p>
           </div>
         </div>

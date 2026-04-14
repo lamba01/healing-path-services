@@ -2,6 +2,8 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import Image from 'next/image'
+// import logo from '../../public/images/llo.jpg'
 
 const links = [
   { href: '/', label: 'Home' },
@@ -27,6 +29,13 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link href="/" className="font-serif text-xl font-semibold text-white tracking-tight">
+        {/* <Image 
+          src="/images/llo.jpg"
+          alt="Healing Path Logo"
+          width={100}
+          height={100}
+          className="inline-block mr-2 rounded-full"
+        /> */}
           Healing Path
         </Link>
 
