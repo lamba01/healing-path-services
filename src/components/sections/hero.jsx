@@ -1,5 +1,6 @@
 import ServiceBtn from "../ui/serviceBtn";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -19,12 +20,14 @@ export default function Hero() {
 
           <div className="pt-2 flex flex-col sm:flex-row gap-5 justify-start">
             <ServiceBtn />
-            <button
-              className="py-3 px-7 cursor-pointer capitalize border rounded border-ink text-ink text-sm font-medium
+            <Link href="/contact">
+              <button
+                className="py-3 px-7 cursor-pointer capitalize border rounded border-ink text-ink text-sm font-medium
               hover:bg-ink text-white transition-all duration-200 hover:bg-olive-600 hover:scale-105"
-            >
-              contact us
-            </button>
+              >
+                contact us
+              </button>
+            </Link>
           </div>
         </div>
 
