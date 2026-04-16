@@ -5,32 +5,14 @@ export default function FullBio() {
     <section className="bg-white py-20 px-6 lg:px-10">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 lg:gap-20 items-start">
         {/* IMAGE */}
-        <div className="flex justify-center">
-          <div className="relative w-75 h-100 md:w-95 md:h-120">
-            {/* BACK IMAGE */}
-            <div className="absolute top-0 left-0 w-[80%] h-[80%]">
-              <Image
-                src="/images/founder.JPG"
-                alt="Morenike Orubuloye"
-                fill
-                className="object-cover rounded"
-              />
-            </div>
-
-            {/* FRONT IMAGE */}
-            <div className="absolute bottom-0 right-0 w-[70%] h-[70%] border-4 border-white">
-              <Image
-                src="/images/founder.JPG"
-                alt="Morenike Orubuloye in session"
-                fill
-                sizes="10"
-                className="object-cover rounded"
-              />
-            </div>
-
-            {/* ACCENT */}
-            <div className="absolute -bottom-4 -left-4 w-24 h-24 border-2 border-coral-500/30 rounded-full z-[-1]" />
-          </div>
+        <div className="flex-1">
+          <Image
+            src="/images/founder.JPG"
+            alt="Founder"
+            width={400}
+            height={500}
+            className="rounded-lg shadow-lg"
+          />
         </div>
 
         {/* TEXT */}

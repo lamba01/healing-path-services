@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Approach() {
   const pillars = [
     {
@@ -18,21 +20,28 @@ export default function Approach() {
       description:
         "Our goal is not just to help you cope but to help you grow, building self-awareness, emotional balance and a lasting sense of empowerment in your healing journey.",
     },
-  ]
+  ];
 
   return (
     <section className="bg-olive py-20 px-6 lg:px-10">
       <div className="max-w-7xl mx-auto">
-
         {/* HEADER */}
-        <div className="max-w-2xl mb-16">
-          <p className="text-coral-500 text-sm font-semibold uppercase tracking-widest mb-3">
-            Our Approach
-          </p>
-          <h2 className="text-black text-3xl sm:text-4xl font-bold leading-snug mb-5">
-            Healing that honours your whole self
-          </h2>
-          <div className="w-12 h-1 bg-coral rounded" />
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+          <div className="space-y-4">
+            <p className="text-coral-500 text-sm font-semibold uppercase tracking-widest mb-3">
+              Our Approach
+            </p>
+            <h2 className="text-olive-500 text-3xl sm:text-4xl font-bold leading-snug mb-5">
+              Healing that honours your whole self
+            </h2>
+            <div className="w-12 h-1 bg-coral-500 rounded" />
+          </div>
+          <Link
+            href="/about"
+            className="self-start md:self-end text-sm font-semibold uppercase tracking-widest text-olive-500 border border-olive-500 px-6 py-3 rounded hover:bg-olive-600 hover:text-white transition-all duration-200"
+          >
+            About Us
+          </Link>
         </div>
 
         {/* PILLARS */}
@@ -56,5 +65,5 @@ export default function Approach() {
         </div>
       </div>
     </section>
-  )
+  );
 }

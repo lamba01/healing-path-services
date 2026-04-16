@@ -9,10 +9,10 @@ export default function Intro() {
           <p className="text-coral-500 text-sm font-semibold uppercase tracking-widest">
             Welcome To
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-olive leading-snug">
+          <h2 className="text-3xl sm:text-4xl font-bold text-olive-500 leading-snug">
             Healing Path Psychotherapy Services
           </h2>
-          <div className="w-12 h-1 bg-coral mx-auto md:mx-0 rounded" />
+          <div className="w-12 h-1 bg-coral-500  md:mx-0 rounded" />
           <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
             At Healing Path Psychotherapy services, Morenike Orubuloye, MAIPR,
             MACP, RP (Q) provides a warm, accepting, culturally competent,
