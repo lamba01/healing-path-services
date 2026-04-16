@@ -6,8 +6,16 @@ const memberships = [
     logo: "/images/oamph.png",
   },
   {
-    name: "Ontario Society of Registered Psychotherapists",
+    name: "College of Registered Psychotherapists of Ontario",
     logo: "/images/crpo.png",
+  },
+  {
+    name: "Canadian Counselling and Psychotherapy Association",
+    logo: "/images/ccpa.png",
+  },
+  {
+    name: "Ontario Society of Registered Psychotherapists",
+    logo: "/images/osr.png",
   },
 ];
 
@@ -30,17 +38,15 @@ export default function Memberships() {
         <div className="flex flex-wrap items-center justify-center gap-12">
           {memberships.map((m) => (
             <div key={m.name} className="flex flex-col items-center gap-4">
-              <div className="relative w-48 h-24">
+              <div className="relative w-48 h-30">
                 <Image
                   src={m.logo}
                   alt={m.name}
                   fill
+                  sizes="10"
                   className="object-contain"
                 />
               </div>
-              <p className="text-gray-500 text-sm text-center max-w-48">
-                {m.name}
-              </p>
             </div>
           ))}
         </div>

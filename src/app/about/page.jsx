@@ -3,8 +3,7 @@ import FullBio from "@/components/sections/fullbio";
 import Qualifications from "@/components/sections/qualifications";
 import Memberships from "@/components/sections/membership";
 import Modalities from "@/components/sections/modalities";
-// import Expertise from "@/sections/Expertise"
-// import BookingCta from "@/sections/BookingCta"
+import Contact from "@/components/sections/contact";
 
 export const metadata = {
   title: "About Morenike | Healing Path Psychotherapy Services",
@@ -18,12 +17,12 @@ export default function AboutPage() {
       {/* <AboutHero /> */}
       <Modalities />
       <FullBio />
-      <Qualifications />
       <Memberships />
-
+      <Qualifications />
+      <Contact />
       {/* 
       <Expertise />
-      <BookingCta /> */}
+      */}
     </main>
   );
 }

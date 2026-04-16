@@ -15,9 +15,9 @@ export default function Contact() {
           </h2>
           <div className="w-12 h-1 bg-coral-500 rounded" />
           <p className="text-gray-500 text-base leading-relaxed">
-            Whether you are unsure about therapy or just want to learn more
-            about our services, feel free to reach out. We are happy to answer
-            any questions you may have before you take the next step.
+            I currently provide virtual psychotherapy to clients across Ontario.
+            If you have any questions or would like to discuss whether my
+            services are the right fit for you, feel free to reach out.
           </p>
           <Link
             href="/contact"
