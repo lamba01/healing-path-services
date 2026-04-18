@@ -13,7 +13,10 @@ const socials = [
     href: "https://www.instagram.com/healing_pathpsychotherapy",
   },
   { label: "TikTok", href: "https://www.tiktok.com/@monicapsychotherapist" },
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/morenike-orubuloye" },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/morenike-orubuloye-8b2a4b162/",
+  },
 ];
 
 export default function Footer() {
@@ -90,7 +93,7 @@ export default function Footer() {
                     href={s.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white/60 text-sm hover:text-coral transition-colors duration-200"
+                    className="text-white/60 text-sm hover:text-coral-500 transition-colors duration-200"
                   >
                     {s.label}
                   </a>
