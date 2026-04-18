@@ -22,7 +22,7 @@ export default function Hero() {
             <ServiceBtn />
             <Link href="/contact">
               <button
-                className="py-3 px-7 cursor-pointer capitalize border rounded border-ink text-ink text-sm font-medium
+                className="py-3 px-7 w-full cursor-pointer capitalize border rounded border-ink text-ink text-sm font-medium
               hover:bg-ink text-white transition-all duration-200 hover:bg-olive-600 hover:scale-105"
               >
                 contact us

@@ -55,7 +55,7 @@ export default function Contact() {
                 Email
               </p>
               <a
-                href="mailto:Morenike@healingpathpsychotherapy.com"
+                href="mailto:morenike@hppstherapy.com"
                 className="text-gray-500 text-base hover:text-coral-500 transition-colors duration-200"
               >
                 Morenike@healingpathpsychotherapy.com

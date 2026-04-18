@@ -29,7 +29,7 @@ export default function Memberships() {
             Professional Memberships
           </p> */}
           <h2 className="text-olive-500 text-3xl sm:text-4xl font-bold leading-snug">
-            Professional Memberships
+            Professional Memberships/License
           </h2>
           <div className="w-12 h-1 bg-coral-500 rounded" />
         </div>

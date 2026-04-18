@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Memberships from "@/components/sections/membership";
 
 export default function Founder() {
   return (
@@ -15,8 +16,8 @@ export default function Founder() {
             />
           </div>
           <div className="flex-1 text-left">
-            <h2 className="text-3xl font-bold text-black mb-4">
-              Meet Our Founder
+            <h2 className="text-3xl font-bold text-olive-500 mb-4 capitalize">
+              about me
             </h2>
             <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
               Morenike Orubuloye is a Registered Psychotherapist (qualifying)
@@ -39,17 +40,9 @@ export default function Founder() {
               understands that healing takes courage, and she is willing to
               provide psychotherapy in a gentle space.
             </p>
-            <div className="bg-olive-600 rounded-lg text-white p-10 mt-10">
-              <h4 className="capitalize font-semibold text-2xl">
-                professional memberships
-              </h4>
-              <ul className="list-disc list-inside mt-4 space-y-2 text-sm sm:text-lg">
-                <li>Ontario Association of Mental health Professionals</li>
-                <li>Ontario Society of Registered Psychotherapists</li>
-              </ul>
-            </div>
           </div>
         </div>
+        <Memberships />
       </div>
     </section>
   );

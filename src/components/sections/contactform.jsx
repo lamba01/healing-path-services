@@ -46,7 +46,7 @@ export default function ContactForm() {
                   href="mailto:Morenike@healingpathpsychotherapy.com"
                   className="text-white/80 text-base hover:text-white transition-colors duration-200"
                 >
-                  Morenike@healingpathpsychotherapy.org
+                  morenike@hppstherapy.com
                 </a>
               </div>
             </div>

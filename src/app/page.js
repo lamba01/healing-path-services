@@ -6,6 +6,7 @@ import BookingCta from "@/components/sections/bookingCTA";
 import FAQ from "@/components/sections/faqs";
 import Services from "@/components/sections/services";
 import Contact from "@/components/sections/contact";
+import Modalities from "@/components/sections/modalities";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Intro />
       <Founder />
       <Services />
+      <Modalities />
       <Approach />
       <BookingCta />
       <FAQ />
