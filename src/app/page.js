@@ -8,6 +8,12 @@ import Services from "@/components/sections/services";
 import Contact from "@/components/sections/contact";
 import Modalities from "@/components/sections/modalities";
 
+export const metadata = {
+  title: "Healing Path Psychotherapy Services | Toronto, Ontario",
+  description:
+    "Healing Path Psychotherapy offers warm, culturally competent and collaborative psychotherapy services across Ontario. Book a free 15 minute consultation today.",
+};
+
 export default function Home() {
   return (
     <main className="overflow-x-hidden">
