@@ -43,7 +43,7 @@ export default function ContactForm() {
                   Email
                 </p>
                 <a
-                  href="mailto:Morenike@healingpathpsychotherapy.com"
+                  href="mailto:morenike@hppstherapy.com"
                   className="text-white/80 text-base hover:text-white transition-colors duration-200"
                 >
                   morenike@hppstherapy.com
