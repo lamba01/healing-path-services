@@ -8,7 +8,7 @@ export const metadata = {
     template: "%s | Healing Path Psychotherapy Services",
   },
   icons: {
-    icon: "/favicon.png",
+    icon: "/images/favicon.png",
   },
   description:
     "Healing Path Psychotherapy offers warm, culturally competent and collaborative psychotherapy services across Ontario.",
