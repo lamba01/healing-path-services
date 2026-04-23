@@ -5,7 +5,10 @@ export default function Intro() {
     <section className="bg-white py-20 px-6 lg:px-10">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row-reverse items-center gap-5 lg:gap-20">
         {/* TEXT */}
-        <div className="flex-1 space-y-3 text-left md:text-left">
+        <div
+          className="flex-1 space-y-3 text-left md:text-left"
+          data-aos="fade-left"
+        >
           <p className="text-coral-500 text-sm font-semibold uppercase tracking-widest">
             Welcome To
           </p>
@@ -41,6 +44,7 @@ export default function Intro() {
                 src="/images/hero2.jpg"
                 alt="Therapy session"
                 fill
+                data-aos="fade-right"
                 // sizes="10"
                 className="object-cover rounded-lg"
               />
@@ -51,6 +55,7 @@ export default function Intro() {
                 src="/images/hero1.jpg"
                 alt="Therapist"
                 fill
+                data-aos="fade-right"
                 // sizes="10"
                 className="object-cover rounded-lg"
               />

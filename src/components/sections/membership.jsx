@@ -38,7 +38,7 @@ export default function Memberships() {
         <div className="flex flex-wrap items-center justify-center gap-12">
           {memberships.map((m) => (
             <div key={m.name} className="flex flex-col items-center gap-4">
-              <div className="relative w-48 h-30">
+              <div className="relative w-48 h-30" data-aos="fade-right">
                 <Image
                   src={m.logo}
                   alt={m.name}

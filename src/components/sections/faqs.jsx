@@ -41,7 +41,7 @@ export default function FAQ() {
     <section className="bg-white py-20 px-6 lg:px-10">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 lg:gap-20 items-start">
         {/* LEFT */}
-        <div className="space-y-5 md:sticky md:top-28">
+        <div className="space-y-5 md:sticky md:top-28" data-aos="fade-right">
           <p className="text-coral text-sm font-semibold uppercase tracking-widest">
             FAQ
           </p>
@@ -58,7 +58,7 @@ export default function FAQ() {
         </div>
 
         {/* RIGHT — ACCORDION */}
-        <div className="space-y-4">
+        <div className="space-y-4" data-aos="fade-left">
           {faqs.map((faq, index) => (
             <div
               key={index}

@@ -4,7 +4,7 @@ import Memberships from "@/components/sections/membership";
 export default function Founder() {
   return (
     <section className="bg-white">
-      <div className="max-w-7xl mx-auto py-16 px-6 lg:px-10">
+      <div className="max-w-7xl mx-auto py-16 px-6 lg:px-10" data-aos="fade-up">
         <div className="flex flex-col md:flex-row items-start gap-10 sm:gap-5">
           <div className="flex-1">
             <Image

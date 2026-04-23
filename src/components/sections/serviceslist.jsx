@@ -62,7 +62,10 @@ export default function ServicesList() {
         </div>
 
         {/* SERVICES */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div
+          className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          data-aos="fade-up"
+        >
           {services.map((service, index) => (
             <div
               key={service.title}

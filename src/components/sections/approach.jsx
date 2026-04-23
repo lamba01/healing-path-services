@@ -23,7 +23,7 @@ export default function Approach() {
   ];
 
   return (
-    <section className="bg-olive py-20 px-6 lg:px-10">
+    <section className="bg-olive py-20 px-6 lg:px-10" data-aos="fade-up">
       <div className="max-w-7xl mx-auto">
         {/* HEADER */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">

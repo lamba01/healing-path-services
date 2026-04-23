@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navbar from "@/components/ui/navbar";
 import Footer from "@/components/ui/footer";
+import AOSInit from "@/components/aosinit";
 
 export const metadata = {
   title: {
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="min-h-full flex flex-col">
+        <AOSInit />
         <Navbar />
         {children}
         <Footer />

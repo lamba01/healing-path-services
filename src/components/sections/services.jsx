@@ -158,6 +158,7 @@ export default function Services() {
             <div
               key={service.title}
               className="group border border-stone-200 rounded p-6 space-y-4 hover:border-coral-500 transition-all duration-300 hover:-translate-y-1"
+              data-aos="fade-up"
             >
               {/* ICON */}
               <div className="w-12 h-12 rounded-full bg-coral-500/10 flex items-center justify-center text-coral-500 group-hover:bg-coral-500 group-hover:text-white transition-all duration-300">
