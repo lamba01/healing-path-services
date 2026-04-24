@@ -1,6 +1,49 @@
+"use client";
+import { useState } from "react";
 import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
 
 export default function ContactForm() {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+  const [status, setStatus] = useState("idle");
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("loading");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (res.ok) {
+        setStatus("success");
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+  };
+
   return (
     <section className="bg-olive-500 py-20 px-6 lg:px-10">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 lg:gap-20 items-start">
@@ -73,68 +116,101 @@ export default function ContactForm() {
             Send us a message
           </h3>
 
-          <div className="grid sm:grid-cols-2 gap-4">
+          <form onSubmit={handleSubmit} className="space-y-5">
+            <div className="grid sm:grid-cols-2 gap-4">
+              <div className="space-y-1">
+                <label className="text-xs font-semibold uppercase tracking-widest text-gray-500">
+                  First Name
+                </label>
+                <input
+                  type="text"
+                  name="firstName"
+                  value={formData.firstName}
+                  onChange={handleChange}
+                  placeholder="Jane"
+                  required
+                  className="w-full border border-stone-200 rounded px-4 py-3 text-sm text-gray-700 outline-none focus:border-olive-500 transition-colors duration-200"
+                />
+              </div>
+              <div className="space-y-1">
+                <label className="text-xs font-semibold uppercase tracking-widest text-gray-500">
+                  Last Name
+                </label>
+                <input
+                  type="text"
+                  name="lastName"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                  placeholder="Doe"
+                  required
+                  className="w-full border border-stone-200 rounded px-4 py-3 text-sm text-gray-700 outline-none focus:border-olive-500 transition-colors duration-200"
+                />
+              </div>
+            </div>
+
             <div className="space-y-1">
               <label className="text-xs font-semibold uppercase tracking-widest text-gray-500">
-                First Name
+                Email
               </label>
               <input
-                type="text"
-                placeholder="Jane"
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="jane@example.com"
+                required
                 className="w-full border border-stone-200 rounded px-4 py-3 text-sm text-gray-700 outline-none focus:border-olive-500 transition-colors duration-200"
               />
             </div>
+
             <div className="space-y-1">
               <label className="text-xs font-semibold uppercase tracking-widest text-gray-500">
-                Last Name
+                Phone
               </label>
               <input
-                type="text"
-                placeholder="Doe"
+                type="tel"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                placeholder="(647) 000-0000"
                 className="w-full border border-stone-200 rounded px-4 py-3 text-sm text-gray-700 outline-none focus:border-olive-500 transition-colors duration-200"
               />
             </div>
-          </div>
 
-          <div className="space-y-1">
-            <label className="text-xs font-semibold uppercase tracking-widest text-gray-500">
-              Email
-            </label>
-            <input
-              type="email"
-              placeholder="jane@example.com"
-              className="w-full border border-stone-200 rounded px-4 py-3 text-sm text-gray-700 outline-none focus:border-olive-500 transition-colors duration-200"
-            />
-          </div>
+            <div className="space-y-1">
+              <label className="text-xs font-semibold uppercase tracking-widest text-gray-500">
+                Message
+              </label>
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                rows={4}
+                placeholder="Tell us briefly what you are looking for..."
+                required
+                className="w-full border border-stone-200 rounded px-4 py-3 text-sm text-gray-700 outline-none focus:border-olive-500 transition-colors duration-200 resize-none"
+              />
+            </div>
 
-          <div className="space-y-1">
-            <label className="text-xs font-semibold uppercase tracking-widest text-gray-500">
-              Phone
-            </label>
-            <input
-              type="tel"
-              placeholder="(647) 000-0000"
-              className="w-full border border-stone-200 rounded px-4 py-3 text-sm text-gray-700 outline-none focus:border-olive-500 transition-colors duration-200"
-            />
-          </div>
+            {status === "success" && (
+              <p className="text-green-600 text-sm font-medium">
+                Message sent successfully! We will get back to you soon.
+              </p>
+            )}
+            {status === "error" && (
+              <p className="text-red-500 text-sm font-medium">
+                Something went wrong. Please try again or email us directly.
+              </p>
+            )}
 
-          <div className="space-y-1">
-            <label className="text-xs font-semibold uppercase tracking-widest text-gray-500">
-              Message
-            </label>
-            <textarea
-              rows={4}
-              placeholder="Tell us briefly what you are looking for..."
-              className="w-full border border-stone-200 rounded px-4 py-3 text-sm text-gray-700 outline-none focus:border-olive-500 transition-colors duration-200 resize-none"
-            />
-          </div>
-
-          <button
-            type="submit"
-            className="w-full bg-coral-500 text-white text-sm font-semibold uppercase tracking-widest py-3 rounded hover:bg-coral-500/90 transition-all duration-200 hover:scale-105"
-          >
-            Send Message
-          </button>
+            <button
+              type="submit"
+              disabled={status === "loading"}
+              className="w-full cursor-pointer bg-coral-500 text-white text-sm font-semibold uppercase tracking-widest py-3 rounded hover:bg-coral-500/90 transition-all duration-200 hover:scale-105 disabled:opacity-70 disabled:cursor-not-allowed"
+            >
+              {status === "loading" ? "Sending..." : "Send Message"}
+            </button>
+          </form>
         </div>
       </div>
     </section>
