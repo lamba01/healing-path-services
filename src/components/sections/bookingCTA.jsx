@@ -37,21 +37,19 @@ export default function BookingCta() {
 
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
             <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/contact"
               className="px-8 py-3 bg-coral-500 text-white text-sm font-semibold uppercase tracking-widest rounded hover:bg-coral-500/90 transition-all duration-200 hover:scale-105"
             >
-              Book on Psychology Today
+              Book a session today
             </a>
-            <a
+            {/* <a
               href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 border border-white text-white text-sm font-semibold uppercase tracking-widest rounded hover:bg-white hover:text-olive-500 transition-all duration-200 hover:scale-105"
             >
               Book on Jane App
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
