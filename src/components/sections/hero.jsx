@@ -20,7 +20,7 @@ export default function Hero() {
 
           <div className="pt-2 flex flex-col sm:flex-row gap-5 justify-start">
             <ServiceBtn />
-            <Link href="/contact">
+            <Link href="#contact">
               <button
                 className="py-3 px-7 w-full cursor-pointer capitalize border rounded border-ink text-ink text-sm font-medium
               hover:bg-ink text-white transition-all duration-200 hover:bg-olive-600 hover:scale-105"

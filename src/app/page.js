@@ -9,9 +9,19 @@ import Contact from "@/components/sections/contact";
 import Modalities from "@/components/sections/modalities";
 
 export const metadata = {
-  title: "Healing Path Psychotherapy Services | Toronto, Ontario",
+  title:
+    "Healing Path Psychotherapy Services | Virtual Therapy Toronto, Ontario",
   description:
     "Healing Path Psychotherapy offers warm, culturally competent and collaborative psychotherapy services across Ontario. Book a free 15 minute consultation today.",
+  keywords: [
+    "psychotherapy Ontario",
+    "virtual therapy Ontario",
+    "culturally competent therapist Toronto",
+    "newcomers therapy Ontario",
+    "ADHD therapy Ontario",
+    "trauma therapy Ontario",
+    "Black therapist Ontario",
+  ],
 };
 
 export default function Home() {

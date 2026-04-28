@@ -3,7 +3,11 @@ import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
 
 export default function Contact() {
   return (
-    <section className="bg-white py-20 px-6 lg:px-10" data-aos="zoom-in">
+    <section
+      className="bg-white py-20 px-6 lg:px-10"
+      data-aos="zoom-in"
+      id="contact"
+    >
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
         {/* LEFT */}
         <div className="space-y-5">

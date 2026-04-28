@@ -6,7 +6,7 @@ import Modalities from "@/components/sections/modalities";
 import BookingCta from "@/components/sections/bookingCTA";
 
 export const metadata = {
-  title: "About Morenike | Healing Path Psychotherapy Services",
+  title: "About Our Specialist | Healing Path Psychotherapy Services",
   description:
     "Meet Morenike Orubuloye, a Registered Psychotherapist (Qualifying) with over 8 years of experience offering warm, culturally competent therapy across Ontario.",
 };
