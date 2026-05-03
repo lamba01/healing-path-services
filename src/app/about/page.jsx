@@ -10,6 +10,42 @@ export const metadata = {
   description:
     "Meet Morenike Orubuloye, a Registered Psychotherapist (Qualifying) with over 8 years of experience offering warm, culturally competent therapy across Ontario.",
 };
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Morenike Orubuloye",
+  jobTitle: "Registered Psychotherapist (Qualifying)",
+  worksFor: {
+    "@type": "MedicalBusiness",
+    name: "Healing Path Psychotherapy Services",
+    url: "https://hppstherapy.com",
+  },
+  hasCredential: [
+    {
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: "RP (Qualifying)",
+      recognizedBy: { "@type": "Organization", name: "CRPO" },
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: "MACP",
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: "MAIPR",
+    },
+  ],
+  knowsAbout: [
+    "Psychotherapy",
+    "ADHD",
+    "Autism",
+    "Trauma",
+    "Grief",
+    "Couples Counselling",
+    "Newcomer Support",
+    "Pastoral Counselling",
+  ],
+};
 
 export default function AboutPage() {
   return (

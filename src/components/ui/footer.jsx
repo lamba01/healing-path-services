@@ -81,7 +81,18 @@ export default function Footer() {
                 </a>
               </div>
             </div>
-
+            <div className="space-y-4">
+              <p className="text-sm font-semibold uppercase tracking-widest text-coral-500">
+                service areas
+              </p>
+              <div className="flex flex-col gap-2">
+                <p className="text-white/60 text-sm transition-colors duration-200">
+                  Virtual psychotherapy available across Ontario — Toronto,
+                  Mississauga, Ottawa, Hamilton, Brampton, London, Kitchener,
+                  Barrie and beyond.
+                </p>
+              </div>
+            </div>
             <div className="space-y-4">
               <p className="text-sm font-semibold uppercase tracking-widest text-coral-500">
                 Follow Us
